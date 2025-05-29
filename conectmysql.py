@@ -5,7 +5,7 @@ connection = mysql.connect(host="localhost", user="root", password="jociluna2003
 cursor = connection.cursor()
 
 # Execute operation
-cursor.execute("call listar_consultas_paciente(4)")
+cursor.execute("select * from convenio")
 result_database = cursor.fetchall()
 
 # Close connection
